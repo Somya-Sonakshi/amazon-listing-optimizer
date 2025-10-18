@@ -117,28 +117,28 @@ GET /api/history/:asin
 Returns optimization history for a given ASIN.
 
 🧪 Example Workflow
-User enters ASIN B07H65KP63 in frontend
+-User enters ASIN B07H65KP63 in frontend
 
-Backend scrapes Amazon → gets product title, bullets, description
+-Backend scrapes Amazon → gets product title, bullets, description
 
-AI returns optimized JSON (title, bullets, description, keywords)
+-AI returns optimized JSON (title, bullets, description, keywords)
 
-Backend stores results in MySQL
+-Backend stores results in MySQL
 
-Frontend shows before vs. after comparison
+-Frontend shows before vs. after comparison
 
-History page (/history/:asin) shows all past runs
+-History page (/history/:asin) shows all past runs
 
 📝 Notes
-Use real ASINs for testing (e.g., B07H65KP63)
+-Use real ASINs for testing (e.g., B07H65KP63)
 
-If scraping fails (due to Amazon restrictions), mock data can be used
+-If scraping fails (due to Amazon restrictions), mock data can be used
 
-Hugging Face free tier may have rate limits
+-Hugging Face free tier may have rate limits
 
 📌 Future Improvements
-Add user authentication
+-Add user authentication
 
-Export optimized listings as CSV/Excel
+-Export optimized listings as CSV/Excel
 
-Add analytics (e.g., keyword frequency)
+-Add analytics (e.g., keyword frequency)
