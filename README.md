@@ -28,43 +28,10 @@ It fetches product details by **ASIN**, enhances them with an AI model (via Hugg
 
 ---
 
-## 📂 Project Structure
-
-.
-├── backend/
-│ ├── config/
-│ │ └── db.js # MySQL connection
-│ ├── routes/
-│ │ └── optimizeRoutes.js # Optimize + History endpoints
-│ ├── scraping/
-│ │ └── fetchAmazonProduct.js # Scraper logic
-│ ├── utils/
-│ │ └── huggingfaceClient.js # AI integration
-│ ├── server.js # Express app entry
-│ └── schema.sql # Database schema
-│
-├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ │ ├── OptimizeForm.js
-│ │ │ ├── ResultComparison.js
-│ │ │ └── HistoryPage.js
-│ │ └── App.js
-│ └── package.json
-│
-├── .env # Environment variables
-└── README.md
-
-sql
-Copy code
-
----
-
 ## 🗄️ Database Setup
 
 Run the schema file to create required tables:
 
-```sql
 -- schema.sql
 CREATE DATABASE amazon_optimizer;
 
@@ -94,26 +61,24 @@ CREATE TABLE optimizations (
 ⚙️ Environment Variables
 Create a .env file inside backend/:
 
-env
-Copy code
 PORT=5000
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_mysql_password
 DB_NAME=amazon_optimizer
 HF_TOKEN=your_huggingface_api_key
+
 ▶️ Running the Project
 Backend
-bash
-Copy code
+
 cd backend
 npm install
 node server.js
 Backend runs on: http://localhost:5000
 
 Frontend
-bash
-Copy code
+
+
 cd frontend
 npm install
 npm start
@@ -122,8 +87,8 @@ Frontend runs on: http://localhost:3000
 🧠 AI Prompt Design
 We use a strict system prompt to enforce JSON output:
 
-json
-Copy code
+
+
 {
   "title": "Optimized product title",
   "description": "Optimized product description",
