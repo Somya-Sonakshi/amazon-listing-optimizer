@@ -59,6 +59,7 @@ CREATE TABLE optimizations (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY (asin) REFERENCES products(asin)
 );
+```
 ---
 ##⚙️ Environment Variables
 Create a .env file inside backend/:
