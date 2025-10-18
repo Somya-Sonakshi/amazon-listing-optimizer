@@ -74,17 +74,17 @@ HF_TOKEN=your_huggingface_api_key
 ▶️ Running the Project
 Backend
 
--- cd backend
--- npm install
--- node server.js
+- cd backend
+- npm install
+- node server.js
 
 Backend runs on: http://localhost:5000
 
 Frontend
 
--- cd frontend
--- npm install
--- npm start
+- cd frontend
+- npm install
+- npm start
 
 Frontend runs on: http://localhost:3000
 
