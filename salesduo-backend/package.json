@@ -1,16 +1,12 @@
 {
   "name": "salesduo-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "dotenv node server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@huggingface/inference": "^4.11.3",
     "axios": "^1.12.2",
@@ -25,3 +21,4 @@
     "user-agents": "^1.1.669"
   }
 }
+
